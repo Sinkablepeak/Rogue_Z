@@ -58,8 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\SaveGame.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Encoders\SaveGameSimpleEncoder.cs" />
-    <Compile Include="Assets\Scripts\Scrips Camara\Movimiento_Camara.cs" />
-    <Compile Include="Assets\Script_Player\Script_Menu\menuController.cs" />
+    <Compile Include="Assets\Scripts\Scrips Tienda\Movimiento_Camara.cs" />
+    <Compile Include="Assets\Scripts\Scrips Menu\menuController.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Examples\Save Custom\ExampleSaveCustom.cs" />
     <Compile Include="Assets\Scripts\Scrips Menu\Controles_Configuracion.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\SaveGameAuto.cs" />
@@ -69,13 +69,15 @@
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\Vector2Save.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\MeshSave.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Examples\Save Position\ExampleSavePosition.cs" />
-    <Compile Include="Assets\Script_Player\movPlayer.cs" />
+    <Compile Include="Assets\Scripts\movPlayer.cs" />
+    <Compile Include="Assets\Scripts\Scrips Tienda\caminar.cs" />
     <Compile Include="Assets\Scripts\Scrips Menu\Buttom_Exit.cs" />
+    <Compile Include="Assets\Scripts\Scrips Tienda\Button_trigger.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Examples\Save Web\ExampleSaveWeb.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Examples\Save Scale\ExampleSaveScale.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Serializers\SaveGameXmlSerializer.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\QuaternionSave.cs" />
-    <Compile Include="Assets\Script_Player\Script_Menu\New_Game.cs" />
+    <Compile Include="Assets\Scripts\Scrips Menu\New_Game.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Examples\Auto Save\ExampleMoveObject.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\Vector3Save.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\Color32Save.cs" />
@@ -87,8 +89,6 @@
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\ColorSave.cs" />
     <Compile Include="Assets\Scripts\Scrips Menu\Creditos_Menu.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Examples\Shared\Scripts\SerializerDropdown.cs" />
-    <Compile Include="Assets\Scripts\Scrips Camara\caminar.cs" />
-    <Compile Include="Assets\Scripts\Button_trigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -688,8 +688,14 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>D:\Users\juanl\Documents\Unity\2020.3.32f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -717,12 +723,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
