@@ -11,14 +11,35 @@ public class menuController : MonoBehaviour
 
     public GameObject configurationPanel;
 
+    private MainMenuCamara mainMenuCamara;
 
+    private void Awake()
+    {
+        //Inicualizar la referencia mainmenucamera
+        //Acceder al componete MainMenuCamara dentro de la camara principal
+        mainMenuCamara = Camera.main.GetComponent<MainMenuCamara>();
+    }
     public void StartGame()
     {
+        mainMenuCamara.ChangePosition(0);
         menuPanel.SetActive(true);
+    }
+
+    public void BackToMainMenu()
+    {
+
+        //Asignar un indice usando el metodo de cambio de posiciones dentro de clase mainmenucamara
+        mainMenuCamara.ChangePosition(0);
+
+        //Activar el panel de portada
+        menuPanel.SetActive(true);
+
     }
 
     public void OptionsPanel()
     {
+        mainMenuCamara.ChangePosition(1);
+
         optionsPanel.SetActive(true);
 
         menuPanel.SetActive(false);
@@ -33,6 +54,8 @@ public class menuController : MonoBehaviour
 
     public void Confirm()
     {
+        mainMenuCamara.ChangePosition(0);
+
         optionsPanel.SetActive(false);
 
         menuPanel.SetActive(true);
