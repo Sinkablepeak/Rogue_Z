@@ -6,14 +6,19 @@ public class Movimiento_Camara : MonoBehaviour
 {//Inicio de clase Main_Menu
     //variables Publicas
     [Header("Puntos de Camara")]
-    public GameObject gameStartPosition;
-    public GameObject characterSelectPosition;
+    public GameObject PosicionInicial;
+    public GameObject Tienda;
+    public GameObject Objeto1;
+    public GameObject Objeto2;
+    public GameObject Objeto3;
+    public GameObject Objeto4;
+
 
     private List<GameObject> cameraPositions = new List<GameObject>();
 
     void Awake()
     {
-        cameraPositions.Add(gameStartPosition);
+        cameraPositions.Add(PosicionInicial);
     }
 
     void Update()
@@ -44,11 +49,27 @@ public class Movimiento_Camara : MonoBehaviour
 
         if (_index == 0)
         {//
-            cameraPositions.Add(gameStartPosition);
+            cameraPositions.Add(PosicionInicial);
         }//
         else if (_index == 1)
         {//
-            cameraPositions.Add(characterSelectPosition);
+            cameraPositions.Add(Tienda);
+        }//
+        else if (_index == 2)
+        {//
+            cameraPositions.Add(Objeto1);
+        }//
+        else if (_index == 3)
+        {//
+            cameraPositions.Add(Objeto2);
+        }//
+        else if (_index == 4)
+        {//
+            cameraPositions.Add(Objeto3);
+        }//
+        else if (_index == 5)
+        {//
+            cameraPositions.Add(Objeto4);
         }//
 
     }//

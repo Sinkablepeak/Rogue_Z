@@ -25,8 +25,6 @@ public class Button_trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
-
         if (other.tag == "Player")
         {
             //Debug.Log("hola");
