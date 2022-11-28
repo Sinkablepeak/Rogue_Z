@@ -7,7 +7,6 @@ public class Camera_Target : MonoBehaviour
 
     [Header("Páneles de UI")]
     public GameObject Personaje;
-    public GameObject Panel_Entrada;
     public GameObject Panel_Tienda;
     public GameObject Panel_Objeto1;
     public GameObject Panel_Objeto2;
@@ -28,7 +27,6 @@ public class Camera_Target : MonoBehaviour
         movimientoCamara.ChangePosition(1);
 
         Panel_Tienda.SetActive(true);
-        Panel_Entrada.SetActive(false);
         Personaje.SetActive(false);
     }//END
 

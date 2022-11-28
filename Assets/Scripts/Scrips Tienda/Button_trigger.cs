@@ -7,19 +7,24 @@ using TMPro;
 public class Button_trigger : MonoBehaviour
 {
     public GameObject texto;
-    public GameObject boton;
-    void Start()
-    {
+    public GameObject Personaje;
+    public GameObject Panel_Tienda;
 
-    }
+    private Movimiento_Camara movimientoCamara;
+    void Awake()
+    {//START
+        movimientoCamara = Camera.main.GetComponent<Movimiento_Camara>();
+    }//END
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
-        { 
+        {
+            movimientoCamara.ChangePosition(1);
             texto.SetActive(false);
-            boton.SetActive(true);
+            Panel_Tienda.SetActive(true);
+            Personaje.SetActive(false);
         }
     }
 
@@ -38,7 +43,6 @@ public class Button_trigger : MonoBehaviour
         if(other.tag=="Player")
         {
             texto.SetActive(false);
-            boton.SetActive(false);
         }
     }
 }
