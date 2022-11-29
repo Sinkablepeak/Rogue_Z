@@ -19,6 +19,10 @@ public class Button_trigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
         if (Input.GetKey(KeyCode.Space))
         {
             movimientoCamara.ChangePosition(1);
@@ -32,7 +36,6 @@ public class Button_trigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            //Debug.Log("hola");
 
             texto.SetActive(true);
         }   

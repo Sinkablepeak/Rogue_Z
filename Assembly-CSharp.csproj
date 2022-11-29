@@ -68,6 +68,7 @@
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\Vector4Save.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\Vector2Save.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\MeshSave.cs" />
+    <Compile Include="Assets\Scripts\Scrips Tienda\Camera_Target.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Examples\Save Position\ExampleSavePosition.cs" />
     <Compile Include="Assets\Scripts\movPlayer.cs" />
     <Compile Include="Assets\Scripts\Scrips Tienda\caminar.cs" />
@@ -90,7 +91,6 @@
     <Compile Include="Assets\BayatGames\SaveGameFree\Scripts\Types\ColorSave.cs" />
     <Compile Include="Assets\Scripts\Scrips Menu\Creditos_Menu.cs" />
     <Compile Include="Assets\BayatGames\SaveGameFree\Examples\Shared\Scripts\SerializerDropdown.cs" />
-    <Compile Include="Assets\Scripts\Scrips Tienda\Camera_Target.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
